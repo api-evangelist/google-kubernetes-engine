@@ -1,0 +1,28 @@
+aid: google-kubernetes-engine
+name: Google Kubernetes Engine
+description: >-
+  Google Kubernetes Engine is a managed Kubernetes service for deploying, managing, and scaling containerized applications on Google Cloud.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Containers
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/google-kubernetes-engine/refs/heads/main/apis.yml
+created: '2026-03-26'
+modified: '2026-03-26'
+specificationVersion: '0.19'
+apis:
+  - aid: google-kubernetes-engine:google-kubernetes-engine
+    name: Google Kubernetes Engine
+    description: >-
+      Google Kubernetes Engine is a managed Kubernetes service for deploying, managing, and scaling containerized applications on Google Cloud.
+    humanURL: https://cloud.google.com/
+    tags:
+      - Containers
+    properties: []
+common:
+  - type: Website
+    url: https://cloud.google.com/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
