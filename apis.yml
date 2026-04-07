@@ -9,11 +9,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Containers
-  - Kubernetes
-  - Google Cloud
-  - Managed Service
   - Cloud Native
+  - Containers
+  - Google Cloud
+  - Kubernetes
+  - Managed Service
   - Orchestration
 url: >-
   https://raw.githubusercontent.com/api-evangelist/google-kubernetes-engine/refs/heads/main/apis.yml
@@ -32,11 +32,11 @@ apis:
       provisioning and managing the underlying infrastructure.
     humanURL: https://cloud.google.com/kubernetes-engine
     tags:
-      - Containers
-      - Kubernetes
-      - Google Cloud
-      - Managed Service
       - Cloud Native
+      - Containers
+      - Google Cloud
+      - Kubernetes
+      - Managed Service
       - Orchestration
     properties:
       - type: Documentation
