@@ -1,0 +1,497 @@
+openapi: 3.1.0
+info:
+  title: Google Kubernetes Engine API
+  description: >-
+    REST API for Google Kubernetes Engine (GKE), a managed Kubernetes service
+    on Google Cloud. Manages clusters, node pools, and operations.
+  version: "v1"
+x-generated-from: https://cloud.google.com/kubernetes-engine/docs/reference/rest
+x-generated-by: claude-crawl-2026-05-08
+servers:
+  - url: https://container.googleapis.com
+paths:
+  /v1/{name}/serverConfig:
+    get:
+      summary: Get server configuration for a location
+      operationId: getServerConfig
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Server config response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/clusters:
+    get:
+      summary: List clusters
+      operationId: listClusters
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Clusters response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a cluster
+      operationId: createCluster
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:
+    get:
+      summary: Get a cluster, node pool, or operation by name
+      operationId: getResource
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Resource response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a cluster or node pool
+      operationId: deleteResource
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a cluster or node pool
+      operationId: updateResource
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setAddons:
+    post:
+      summary: Set addons configuration on a cluster
+      operationId: setAddons
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setLogging:
+    post:
+      summary: Set logging service on a cluster
+      operationId: setLogging
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setMonitoring:
+    post:
+      summary: Set monitoring service on a cluster
+      operationId: setMonitoring
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setMasterAuth:
+    post:
+      summary: Set master authentication for a cluster
+      operationId: setMasterAuth
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setNetworkPolicy:
+    post:
+      summary: Set network policy on a cluster
+      operationId: setNetworkPolicy
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setMaintenancePolicy:
+    post:
+      summary: Set maintenance policy on a cluster
+      operationId: setMaintenancePolicy
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setResourceLabels:
+    post:
+      summary: Set resource labels on a cluster
+      operationId: setResourceLabels
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:startIpRotation:
+    post:
+      summary: Start IP rotation on a cluster
+      operationId: startIpRotation
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:completeIpRotation:
+    post:
+      summary: Complete IP rotation on a cluster
+      operationId: completeIpRotation
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:updateMaster:
+    post:
+      summary: Update the master version of a cluster
+      operationId: updateMaster
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/nodePools:
+    get:
+      summary: List node pools
+      operationId: listNodePools
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Node pools response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a node pool
+      operationId: createNodePool
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setSize:
+    post:
+      summary: Set node pool size
+      operationId: setNodePoolSize
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:setAutoscaling:
+    post:
+      summary: Set autoscaling for a node pool
+      operationId: setNodePoolAutoscaling
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:rollback:
+    post:
+      summary: Rollback a node pool upgrade
+      operationId: rollbackNodePool
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/operations:
+    get:
+      summary: List operations
+      operationId: listOperations
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operations response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:cancel:
+    post:
+      summary: Cancel an operation
+      operationId: cancelOperation
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Cancel response
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://accounts.google.com/o/oauth2/auth
+          tokenUrl: https://oauth2.googleapis.com/token
+          scopes:
+            https://www.googleapis.com/auth/cloud-platform: View and manage Google Cloud data
+security:
+  - oauth2:
+      - https://www.googleapis.com/auth/cloud-platform

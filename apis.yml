@@ -39,6 +39,8 @@ apis:
       - Managed Service
       - Orchestration
     properties:
+      - url: openapi/google-kubernetes-engine-openapi.yml
+        type: OpenAPI
       - type: Documentation
         url: https://cloud.google.com/kubernetes-engine/docs
       - type: Getting Started
