@@ -62,6 +62,10 @@ common:
     url: https://status.cloud.google.com/
   - type: Support
     url: https://cloud.google.com/support
+  - type: Integrations
+    url: https://cloud.google.com/marketplace
+integrations:
+  - name: Become a Partner
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
