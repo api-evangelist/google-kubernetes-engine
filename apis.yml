@@ -43,7 +43,7 @@ apis:
         type: OpenAPI
       - type: Documentation
         url: https://cloud.google.com/kubernetes-engine/docs
-      - type: Getting Started
+      - type: GettingStarted
         url: https://cloud.google.com/kubernetes-engine/docs/quickstart
 common:
   - type: Website
@@ -54,11 +54,11 @@ common:
     url: https://cloud.google.com/kubernetes-engine/pricing
   - type: Blog
     url: https://cloud.google.com/blog/products/containers-kubernetes
-  - type: Sign Up
+  - type: SignUp
     url: https://console.cloud.google.com/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/GoogleCloudPlatform
-  - type: Status
+  - type: StatusPage
     url: https://status.cloud.google.com/
   - type: Support
     url: https://cloud.google.com/support
