@@ -1,0 +1,504 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Google Kubernetes Engine API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+      "accessTokenUrl": "https://oauth2.googleapis.com/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Get server configuration for a location",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://container.googleapis.com/v1/:name/serverConfig",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get server configuration for a location"
+    },
+    {
+      "info": {
+        "name": "List clusters",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://container.googleapis.com/v1/:parent/clusters",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List clusters"
+    },
+    {
+      "info": {
+        "name": "Create a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:parent/clusters",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a cluster"
+    },
+    {
+      "info": {
+        "name": "Get a cluster, node pool, or operation by name",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://container.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a cluster, node pool, or operation by name"
+    },
+    {
+      "info": {
+        "name": "Update a cluster or node pool",
+        "type": "http"
+      },
+      "http": {
+        "method": "PUT",
+        "url": "https://container.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Update a cluster or node pool"
+    },
+    {
+      "info": {
+        "name": "Delete a cluster or node pool",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://container.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a cluster or node pool"
+    },
+    {
+      "info": {
+        "name": "Set addons configuration on a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setAddons",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set addons configuration on a cluster"
+    },
+    {
+      "info": {
+        "name": "Set logging service on a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setLogging",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set logging service on a cluster"
+    },
+    {
+      "info": {
+        "name": "Set monitoring service on a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setMonitoring",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set monitoring service on a cluster"
+    },
+    {
+      "info": {
+        "name": "Set master authentication for a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setMasterAuth",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set master authentication for a cluster"
+    },
+    {
+      "info": {
+        "name": "Set network policy on a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setNetworkPolicy",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set network policy on a cluster"
+    },
+    {
+      "info": {
+        "name": "Set maintenance policy on a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setMaintenancePolicy",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set maintenance policy on a cluster"
+    },
+    {
+      "info": {
+        "name": "Set resource labels on a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setResourceLabels",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set resource labels on a cluster"
+    },
+    {
+      "info": {
+        "name": "Start IP rotation on a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:startIpRotation",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Start IP rotation on a cluster"
+    },
+    {
+      "info": {
+        "name": "Complete IP rotation on a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:completeIpRotation",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Complete IP rotation on a cluster"
+    },
+    {
+      "info": {
+        "name": "Update the master version of a cluster",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:updateMaster",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Update the master version of a cluster"
+    },
+    {
+      "info": {
+        "name": "List node pools",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://container.googleapis.com/v1/:parent/nodePools",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List node pools"
+    },
+    {
+      "info": {
+        "name": "Create a node pool",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:parent/nodePools",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a node pool"
+    },
+    {
+      "info": {
+        "name": "Set node pool size",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setSize",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set node pool size"
+    },
+    {
+      "info": {
+        "name": "Set autoscaling for a node pool",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:setAutoscaling",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set autoscaling for a node pool"
+    },
+    {
+      "info": {
+        "name": "Rollback a node pool upgrade",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:rollback",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Rollback a node pool upgrade"
+    },
+    {
+      "info": {
+        "name": "List operations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://container.googleapis.com/v1/:parent/operations",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List operations"
+    },
+    {
+      "info": {
+        "name": "Cancel an operation",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://container.googleapis.com/v1/:name:cancel",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Cancel an operation"
+    }
+  ],
+  "bundled": true
+}
