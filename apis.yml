@@ -41,6 +41,12 @@ apis:
       - type: GettingStarted
         url: https://cloud.google.com/kubernetes-engine/docs/quickstart
 common:
+  - type: VulnerabilityDisclosure
+    url: security/google-kubernetes-engine-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/google-kubernetes-engine-domain-security.yml
+  - type: Authentication
+    url: authentication/google-kubernetes-engine-authentication.yml
   - type: OAuthScopes
     url: scopes/google-kubernetes-engine-scopes.yml
   - type: Website
