@@ -41,6 +41,8 @@ apis:
       - type: GettingStarted
         url: https://cloud.google.com/kubernetes-engine/docs/quickstart
 common:
+  - type: OAuthScopes
+    url: scopes/google-kubernetes-engine-scopes.yml
   - type: Website
     url: https://cloud.google.com/kubernetes-engine
   - type: Documentation
