@@ -41,6 +41,8 @@ apis:
       - type: GettingStarted
         url: https://cloud.google.com/kubernetes-engine/docs/quickstart
 common:
+  - type: AgenticAccess
+    url: agentic-access/google-kubernetes-engine-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/google-kubernetes-engine-vulnerability-disclosure.yml
   - type: DomainSecurity
