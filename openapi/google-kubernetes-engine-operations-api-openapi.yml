@@ -1,0 +1,44 @@
+openapi: 3.1.0
+info:
+  title: Google Kubernetes Engine Clusters Operations API
+  description: REST API for Google Kubernetes Engine (GKE), a managed Kubernetes service on Google Cloud. Manages clusters, node pools, and operations.
+  version: v1
+servers:
+- url: https://container.googleapis.com
+security:
+- oauth2:
+  - https://www.googleapis.com/auth/cloud-platform
+tags:
+- name: Operations
+paths:
+  /v1/{parent}/operations:
+    get:
+      summary: List operations
+      operationId: listOperations
+      parameters:
+      - name: parent
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Operations response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Operations
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://accounts.google.com/o/oauth2/auth
+          tokenUrl: https://oauth2.googleapis.com/token
+          scopes:
+            https://www.googleapis.com/auth/cloud-platform: View and manage Google Cloud data
+x-generated-from: https://cloud.google.com/kubernetes-engine/docs/reference/rest
+x-generated-by: claude-crawl-2026-05-08
