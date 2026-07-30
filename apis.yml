@@ -5,7 +5,20 @@ description: >-
   environment for deploying, managing, and scaling containerized applications. It offers autopilot and standard modes,
   built-in security, multi-cluster management, and seamless integration with Google Cloud services.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/google-kubernetes-engine.png
 tags:
   - Cloud Native
   - Containers
@@ -18,28 +31,73 @@ created: '2026-03-26'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-  - aid: google-kubernetes-engine:google-kubernetes-engine
-    name: Google Kubernetes Engine
-    description: >-
-      Google Kubernetes Engine (GKE) is a managed, production-ready environment for deploying containerized applications
-      on Google Cloud. It provides auto-scaling, auto-upgrade, auto-repair, and built-in security features to help you
-      run Kubernetes clusters with minimal operational overhead. GKE Autopilot further simplifies cluster management by
-      automatically provisioning and managing the underlying infrastructure.
-    humanURL: https://cloud.google.com/kubernetes-engine
-    tags:
-      - Cloud Native
-      - Containers
-      - Google Cloud
-      - Kubernetes
-      - Managed Service
-      - Orchestration
-    properties:
-      - url: openapi/google-kubernetes-engine-openapi.yml
-        type: OpenAPI
-      - type: Documentation
-        url: https://cloud.google.com/kubernetes-engine/docs
-      - type: GettingStarted
-        url: https://cloud.google.com/kubernetes-engine/docs/quickstart
+- aid: google-kubernetes-engine:google-kubernetes-engine-clusters-api
+  name: Google Kubernetes Engine Clusters API
+  description: The Clusters API from Google Kubernetes Engine — 1 operation(s) for clusters.
+  humanURL: https://cloud.google.com/kubernetes-engine
+  tags:
+  - Clusters
+  properties:
+  - type: OpenAPI
+    url: openapi/google-kubernetes-engine-clusters-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/kubernetes-engine/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/kubernetes-engine/docs/quickstart
+- aid: google-kubernetes-engine:google-kubernetes-engine-google-kubernetes-engine-api-api
+  name: Google Kubernetes Engine Google Kubernetes Engine API API
+  description: >-
+    The Google Kubernetes Engine API API from Google Kubernetes Engine — 15 operation(s) for google kubernetes
+    engine api.
+  humanURL: https://cloud.google.com/kubernetes-engine
+  tags:
+  - Google Kubernetes Engine API
+  properties:
+  - type: OpenAPI
+    url: openapi/google-kubernetes-engine-google-kubernetes-engine-api-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/kubernetes-engine/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/kubernetes-engine/docs/quickstart
+- aid: google-kubernetes-engine:google-kubernetes-engine-nodepools-api
+  name: Google Kubernetes Engine NodePools API
+  description: The NodePools API from Google Kubernetes Engine — 1 operation(s) for nodepools.
+  humanURL: https://cloud.google.com/kubernetes-engine
+  tags:
+  - NodePools
+  properties:
+  - type: OpenAPI
+    url: openapi/google-kubernetes-engine-nodepools-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/kubernetes-engine/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/kubernetes-engine/docs/quickstart
+- aid: google-kubernetes-engine:google-kubernetes-engine-operations-api
+  name: Google Kubernetes Engine Operations API
+  description: The Operations API from Google Kubernetes Engine — 1 operation(s) for operations.
+  humanURL: https://cloud.google.com/kubernetes-engine
+  tags:
+  - Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/google-kubernetes-engine-operations-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/kubernetes-engine/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/kubernetes-engine/docs/quickstart
+- aid: google-kubernetes-engine:google-kubernetes-engine-serverconfig-api
+  name: Google Kubernetes Engine ServerConfig API
+  description: The ServerConfig API from Google Kubernetes Engine — 1 operation(s) for serverconfig.
+  humanURL: https://cloud.google.com/kubernetes-engine
+  tags:
+  - ServerConfig
+  properties:
+  - type: OpenAPI
+    url: openapi/google-kubernetes-engine-serverconfig-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/kubernetes-engine/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/kubernetes-engine/docs/quickstart
 common:
   - type: AgenticAccess
     url: agentic-access/google-kubernetes-engine-agentic-access.yml
