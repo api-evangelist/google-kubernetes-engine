@@ -1,0 +1,22 @@
+{
+  "provider": "google-kubernetes-engine",
+  "sources": [
+    "google-kubernetes-engine-clusters-api-openapi.yml",
+    "google-kubernetes-engine-google-kubernetes-engine-api-api-openapi.yml",
+    "google-kubernetes-engine-nodepools-api-openapi.yml",
+    "google-kubernetes-engine-operations-api-openapi.yml",
+    "google-kubernetes-engine-serverconfig-api-openapi.yml"
+  ],
+  "outputs": [
+    "google-kubernetes-engine-clusters-api-openapi.yml",
+    "google-kubernetes-engine-google-kubernetes-engine-api-api-openapi.yml",
+    "google-kubernetes-engine-nodepools-api-openapi.yml",
+    "google-kubernetes-engine-operations-api-openapi.yml",
+    "google-kubernetes-engine-serverconfig-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
