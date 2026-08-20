@@ -20,6 +20,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/google-kubernetes-engine.png
 tags:
+  - Cloud-Native
+  - Containers
+  - Google Cloud
+  - Kubernetes
+  - Managed Service
+  - Orchestration
+tags_raw:
   - Cloud Native
   - Containers
   - Google Cloud
@@ -36,6 +43,8 @@ apis:
   description: The Clusters API from Google Kubernetes Engine — 1 operation(s) for clusters.
   humanURL: https://cloud.google.com/kubernetes-engine
   tags:
+  - Cluster
+  tags_raw:
   - Clusters
   properties:
   - type: OpenAPI
@@ -64,6 +73,8 @@ apis:
   description: The NodePools API from Google Kubernetes Engine — 1 operation(s) for nodepools.
   humanURL: https://cloud.google.com/kubernetes-engine
   tags:
+  - Node Pools
+  tags_raw:
   - NodePools
   properties:
   - type: OpenAPI
@@ -76,7 +87,8 @@ apis:
   name: Google Kubernetes Engine Operations API
   description: The Operations API from Google Kubernetes Engine — 1 operation(s) for operations.
   humanURL: https://cloud.google.com/kubernetes-engine
-  tags:
+  tags: []
+  tags_raw:
   - Operations
   properties:
   - type: OpenAPI
