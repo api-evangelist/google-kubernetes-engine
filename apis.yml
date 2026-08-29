@@ -5,6 +5,18 @@ description: >-
   environment for deploying, managing, and scaling containerized applications. It offers autopilot and standard modes,
   built-in security, multi-cluster management, and seamless integration with Google Cloud services.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
