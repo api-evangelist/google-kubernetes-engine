@@ -85,7 +85,7 @@ apis:
   description: The NodePools API from Google Kubernetes Engine — 1 operation(s) for nodepools.
   humanURL: https://cloud.google.com/kubernetes-engine
   tags:
-  - Node Pools
+  - NodePools
   tags_raw:
   - NodePools
   properties:
