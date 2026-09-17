@@ -67,29 +67,15 @@ apis:
     url: https://cloud.google.com/kubernetes-engine/docs/quickstart
 - aid: google-kubernetes-engine:google-kubernetes-engine-google-kubernetes-engine-api-api
   name: Google Kubernetes Engine Google Kubernetes Engine API
-  description: The Google Kubernetes Engine API API from Google Kubernetes Engine — 15 operation(s) for
-    google kubernetes engine api.
+  description: >-
+    The Google Kubernetes Engine API API from Google Kubernetes Engine — 15 operation(s) for google kubernetes
+    engine api.
   humanURL: https://cloud.google.com/kubernetes-engine
   tags:
   - Google Kubernetes Engine API
   properties:
   - type: OpenAPI
     url: openapi/google-kubernetes-engine-google-kubernetes-engine-api-api-openapi.yml
-  - type: Documentation
-    url: https://cloud.google.com/kubernetes-engine/docs
-  - type: GettingStarted
-    url: https://cloud.google.com/kubernetes-engine/docs/quickstart
-- aid: google-kubernetes-engine:google-kubernetes-engine-nodepools-api
-  name: Google Kubernetes Engine NodePools API
-  description: The NodePools API from Google Kubernetes Engine — 1 operation(s) for nodepools.
-  humanURL: https://cloud.google.com/kubernetes-engine
-  tags:
-  - Node Pools
-  tags_raw:
-  - NodePools
-  properties:
-  - type: OpenAPI
-    url: openapi/google-kubernetes-engine-nodepools-api-openapi.yml
   - type: Documentation
     url: https://cloud.google.com/kubernetes-engine/docs
   - type: GettingStarted
@@ -117,6 +103,19 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/google-kubernetes-engine-serverconfig-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/kubernetes-engine/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/kubernetes-engine/docs/quickstart
+- aid: google-kubernetes-engine:google-kubernetes-engine-node-pools-api
+  name: Google Kubernetes Engine Node Pools API
+  description: The Node Pools API from Google Kubernetes Engine — 1 operation(s) for node pools.
+  humanURL: https://cloud.google.com/kubernetes-engine
+  tags:
+  - Node Pools
+  properties:
+  - type: OpenAPI
+    url: openapi/google-kubernetes-engine-node-pools-api-openapi.yml
   - type: Documentation
     url: https://cloud.google.com/kubernetes-engine/docs
   - type: GettingStarted
