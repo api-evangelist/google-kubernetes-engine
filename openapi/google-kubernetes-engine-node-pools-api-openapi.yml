@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Google Kubernetes Engine Clusters NodePools API
+  title: Google Kubernetes Engine Node Pools API
   description: REST API for Google Kubernetes Engine (GKE), a managed Kubernetes service on Google Cloud. Manages clusters, node pools, and operations.
   version: v1
 servers:
@@ -9,7 +9,7 @@ security:
 - oauth2:
   - https://www.googleapis.com/auth/cloud-platform
 tags:
-- name: NodePools
+- name: Node Pools
 paths:
   /v1/{parent}/nodePools:
     get:
@@ -29,7 +29,7 @@ paths:
               schema:
                 type: object
       tags:
-      - NodePools
+      - Node Pools
     post:
       summary: Create a node pool
       operationId: createNodePool
@@ -52,7 +52,7 @@ paths:
               schema:
                 type: object
       tags:
-      - NodePools
+      - Node Pools
 components:
   securitySchemes:
     oauth2:

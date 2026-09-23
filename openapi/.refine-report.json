@@ -1,11 +1,7 @@
 {
   "provider": "google-kubernetes-engine",
   "sources": [
-    "google-kubernetes-engine-clusters-api-openapi.yml",
-    "google-kubernetes-engine-google-kubernetes-engine-api-api-openapi.yml",
-    "google-kubernetes-engine-nodepools-api-openapi.yml",
-    "google-kubernetes-engine-operations-api-openapi.yml",
-    "google-kubernetes-engine-serverconfig-api-openapi.yml"
+    "_ae-authored/google-kubernetes-engine-openapi.yml"
   ],
   "outputs": [
     "google-kubernetes-engine-clusters-api-openapi.yml",
@@ -14,9 +10,50 @@
     "google-kubernetes-engine-operations-api-openapi.yml",
     "google-kubernetes-engine-serverconfig-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "google-kubernetes-engine-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "google-kubernetes-engine-openapi.yml: tagged paths GET /v1/{name}/serverConfig -> ServerConfig",
+    "google-kubernetes-engine-openapi.yml: tagged paths GET /v1/{parent}/clusters -> Clusters",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{parent}/clusters -> Clusters",
+    "google-kubernetes-engine-openapi.yml: tagged paths GET /v1/{name} -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths DELETE /v1/{name} -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths PUT /v1/{name} -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setAddons -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setLogging -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setMonitoring -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setMasterAuth -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setNetworkPolicy -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setMaintenancePolicy -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setResourceLabels -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:startIpRotation -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:completeIpRotation -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:updateMaster -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths GET /v1/{parent}/nodePools -> NodePools",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{parent}/nodePools -> NodePools",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setSize -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:setAutoscaling -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:rollback -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: tagged paths GET /v1/{parent}/operations -> Operations",
+    "google-kubernetes-engine-openapi.yml: tagged paths POST /v1/{name}:cancel -> Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: declared missing tag: Clusters",
+    "google-kubernetes-engine-openapi.yml: declared missing tag: Google Kubernetes Engine API",
+    "google-kubernetes-engine-openapi.yml: declared missing tag: NodePools",
+    "google-kubernetes-engine-openapi.yml: declared missing tag: Operations",
+    "google-kubernetes-engine-openapi.yml: declared missing tag: ServerConfig",
+    "superseded outputs removed: google-kubernetes-engine-node-pools-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 5 total)"
+  ],
+  "skipped": [
+    "google-kubernetes-engine-clusters-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-kubernetes-engine-google-kubernetes-engine-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-kubernetes-engine-node-pools-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-kubernetes-engine-operations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-kubernetes-engine-serverconfig-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
