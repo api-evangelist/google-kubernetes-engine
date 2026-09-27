@@ -1,7 +1,8 @@
 {
   "provider": "google-kubernetes-engine",
   "sources": [
-    "_ae-authored/google-kubernetes-engine-openapi.yml"
+    "_ae-authored/google-kubernetes-engine-openapi.yml",
+    "google-cloud-kubernetes-engine-clusters-api-openapi.yml"
   ],
   "outputs": [
     "google-kubernetes-engine-clusters-api-openapi.yml",
@@ -11,7 +12,8 @@
     "google-kubernetes-engine-serverconfig-api-openapi.yml"
   ],
   "archived": [
-    "deleted 1 superseded output(s) from the previous generation"
+    "deleted 1 superseded output(s) from the previous generation",
+    "archived openapi/google-cloud-kubernetes-engine-clusters-api-openapi.yml"
   ],
   "errors": [],
   "warnings": [],
@@ -46,6 +48,7 @@
     "google-kubernetes-engine-openapi.yml: declared missing tag: NodePools",
     "google-kubernetes-engine-openapi.yml: declared missing tag: Operations",
     "google-kubernetes-engine-openapi.yml: declared missing tag: ServerConfig",
+    "tag 'Clusters' spans 2 source specs (google-kubernetes-engine-openapi.yml, google-cloud-kubernetes-engine-clusters-api-openapi.yml): per-path servers applied",
     "superseded outputs removed: google-kubernetes-engine-node-pools-api-openapi.yml",
     "apis.yml register: written (+1 apis, 5 total)"
   ],

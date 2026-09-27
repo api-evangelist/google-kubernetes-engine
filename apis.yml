@@ -111,6 +111,7 @@ apis:
   name: Google Kubernetes Engine Node Pools API
   description: The Node Pools API from Google Kubernetes Engine — 1 operation(s) for node pools.
   humanURL: https://cloud.google.com/kubernetes-engine
+  baseURL: https://container.googleapis.com
   tags:
   - Node Pools
   properties:
@@ -120,6 +121,12 @@ apis:
     url: https://cloud.google.com/kubernetes-engine/docs
   - type: GettingStarted
     url: https://cloud.google.com/kubernetes-engine/docs/quickstart
+  - type: Documentation
+    url: https://cloud.google.com/kubernetes-engine/docs/reference/rest
+  - type: Authentication
+    url: https://cloud.google.com/kubernetes-engine/docs/how-to/api-server-authentication
+  - type: JSONSchema
+    url: json-schema/gke-cluster.json
 common:
 - type: AgenticAccess
   url: agentic-access/google-kubernetes-engine-agentic-access.yml
@@ -154,3 +161,4 @@ integrations:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-parent: google-cloud-platform

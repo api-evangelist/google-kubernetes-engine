@@ -1,10 +1,17 @@
+# x-archived-from: google-cloud-kubernetes-engine-clusters-api-openapi.yml
+# x-archived-on: 2026-09-26
 openapi: 3.2.0
 info:
-  title: Google Kubernetes Engine Clusters API
-  version: '1.0'
-  description: 'Operations tagged Clusters across 2 of this provider''s published API definitions: google-kubernetes-engine-openapi.yml, google-cloud-kubernetes-engine-clusters-api-openapi.yml. Each path carries the servers of the definition it was published in.'
+  title: Google Cloud Kubernetes Engine Google Kubernetes Engine…
+  description: Builds and manages container-based applications, powered by the open source Kubernetes technology.
+  version: 1.0.0
+  contact:
+    name: Google Cloud
+    url: https://cloud.google.com/kubernetes-engine
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
 servers:
-- url: https://container.googleapis.com
 - url: https://container.googleapis.com/v1
   description: Google Kubernetes Engine API v1
 security:
@@ -12,54 +19,11 @@ security:
   - https://www.googleapis.com/auth/cloud-platform
 tags:
 - name: Clusters
+  description: Manage GKE clusters
 paths:
-  /v1/{parent}/clusters:
-    get:
-      summary: List clusters
-      operationId: listClusters
-      parameters:
-      - name: parent
-        in: path
-        required: true
-        schema:
-          type: string
-      responses:
-        '200':
-          description: Clusters response
-          content:
-            application/json:
-              schema:
-                type: object
-      tags:
-      - Clusters
-    post:
-      summary: Create a cluster
-      operationId: createCluster
-      parameters:
-      - name: parent
-        in: path
-        required: true
-        schema:
-          type: string
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-      responses:
-        '200':
-          description: Operation response
-          content:
-            application/json:
-              schema:
-                type: object
-      tags:
-      - Clusters
-    servers:
-    - url: https://container.googleapis.com
   /projects/{projectId}/locations/{location}/clusters:
     get:
-      operationId: getProjectsByProjectIdLocationsByLocationClusters
+      operationId: listClusters
       summary: Google Cloud Kubernetes Engine List Clusters
       description: Lists all clusters owned by a project in the specified location.
       tags:
@@ -87,10 +51,8 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/Cluster'
-      x-operation-id-source: normalized
-      x-operation-id-original: listClusters
     post:
-      operationId: postProjectsByProjectIdLocationsByLocationClusters
+      operationId: createCluster
       summary: Google Cloud Kubernetes Engine Create Cluster
       description: Creates a cluster in the specified project and location.
       tags:
@@ -121,11 +83,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Operation'
-      x-operation-id-source: normalized
-      x-operation-id-original: createCluster
-    servers:
-    - url: https://container.googleapis.com/v1
-      description: Google Kubernetes Engine API v1
   /projects/{projectId}/locations/{location}/clusters/{clusterId}:
     get:
       operationId: getCluster
@@ -185,9 +142,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Operation'
-    servers:
-    - url: https://container.googleapis.com/v1
-      description: Google Kubernetes Engine API v1
 components:
   schemas:
     Cluster:
@@ -273,9 +227,4 @@ components:
           authorizationUrl: https://accounts.google.com/o/oauth2/auth
           tokenUrl: https://oauth2.googleapis.com/token
           scopes:
-            https://www.googleapis.com/auth/cloud-platform: View and manage Google Cloud data
-x-refined-from:
-- google-kubernetes-engine-openapi.yml
-- google-cloud-kubernetes-engine-clusters-api-openapi.yml
-x-generated-from: https://cloud.google.com/kubernetes-engine/docs/reference/rest
-x-generated-by: claude-crawl-2026-05-08
+            https://www.googleapis.com/auth/cloud-platform: Full access to Google Cloud Platform
