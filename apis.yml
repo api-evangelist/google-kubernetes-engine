@@ -37,14 +37,14 @@ tags:
 - Google Cloud
 - Kubernetes
 - Managed Service
-- Orchestration
+- Container Orchestration
 tags_raw:
 - Cloud Native
 - Containers
 - Google Cloud
 - Kubernetes
 - Managed Service
-- Orchestration
+- Container Orchestration
 url: https://raw.githubusercontent.com/api-evangelist/google-kubernetes-engine/refs/heads/main/apis.yml
 created: '2026-03-26'
 modified: '2026-09-16'
@@ -128,6 +128,9 @@ apis:
   - type: JSONSchema
     url: json-schema/gke-cluster.json
 common:
+- type: CapabilityMap
+  url: capabilities/google-kubernetes-engine-capability-edges.yml
+  name: Google Kubernetes Engine Business Capability Map
 - type: AgenticAccess
   url: agentic-access/google-kubernetes-engine-agentic-access.yml
 - type: VulnerabilityDisclosure
@@ -162,3 +165,5 @@ maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 x-parent: google-cloud-platform
+x-tags-removed:
+- Orchestration
