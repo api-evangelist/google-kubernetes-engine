@@ -1,0 +1,44 @@
+slug: google-kubernetes-engine
+provider: Google Kubernetes Engine
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Clusters
+  spec_file: google-kubernetes-engine-clusters-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.85
+  evidence: POST /projects/{projectId}/locations/{location}/clusters  createCluster  Google Cloud Kubernetes
+    Engine Create Cluster
+  reason: Operations create, list and delete managed Kubernetes clusters — provisioning of cloud compute
+    infrastructure, i.e. IT Infrastructure Management.
+- tag: Google Kubernetes Engine API
+  spec_file: google-kubernetes-engine-google-kubernetes-engine-api-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.82
+  evidence: POST /v1/{name}:setAddons  setAddons  Set addons configuration on a cluster; setNetworkPolicy  Set
+    network policy on a cluster
+  reason: Cluster/node-pool lifecycle and runtime configuration of managed Kubernetes compute — cloud
+    infrastructure management, not an industry business capability.
+- tag: Node Pools
+  spec_file: google-kubernetes-engine-node-pools-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.8
+  evidence: POST /v1/{parent}/nodePools  createNodePool  Create a node pool
+  reason: Node pools are the compute node groups backing a cluster; creating/listing them is compute infrastructure
+    provisioning.
