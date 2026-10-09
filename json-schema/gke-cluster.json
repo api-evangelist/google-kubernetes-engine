@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-search/google-cloud-kubernetes-engine/refs/heads/main/json-schema/gke-cluster.json",
+  "title": "Google Kubernetes Engine Cluster",
+  "description": "Represents a GKE cluster resource, including its configuration, status, networking, and node pool settings.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the cluster."
+    },
+    "description": {
+      "type": "string",
+      "description": "An optional description of the cluster."
+    },
+    "initialNodeCount": {
+      "type": "integer",
+      "description": "The number of nodes to create in this cluster's default node pool."
+    },
+    "location": {
+      "type": "string",
+      "description": "The name of the Google Compute Engine zone or region in which the cluster resides."
+    },
+    "nodeConfig": {
+      "type": "object",
+      "description": "Parameters used in creating the cluster's nodes.",
+      "properties": {
+        "machineType": {
+          "type": "string",
+          "description": "The name of a Google Compute Engine machine type."
+        },
+        "diskSizeGb": {
+          "type": "integer",
+          "description": "Size of the disk attached to each node, specified in GB."
+        },
+        "oauthScopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The set of Google API scopes available on the nodes."
+        },
+        "imageType": {
+          "type": "string",
+          "description": "The image type to use for this node."
+        }
+      }
+    },
+    "network": {
+      "type": "string",
+      "description": "The name of the Google Compute Engine network to which the cluster is connected."
+    },
+    "subnetwork": {
+      "type": "string",
+      "description": "The name of the Google Compute Engine subnetwork to which the cluster is connected."
+    },
+    "clusterIpv4Cidr": {
+      "type": "string",
+      "description": "The IP address range of the container pods in this cluster."
+    },
+    "status": {
+      "type": "string",
+      "description": "The current status of the cluster.",
+      "enum": [
+        "STATUS_UNSPECIFIED",
+        "PROVISIONING",
+        "RUNNING",
+        "RECONCILING",
+        "STOPPING",
+        "ERROR",
+        "DEGRADED"
+      ]
+    },
+    "endpoint": {
+      "type": "string",
+      "description": "The IP address of this cluster's master endpoint."
+    },
+    "currentMasterVersion": {
+      "type": "string",
+      "description": "The current software version of the master endpoint."
+    },
+    "currentNodeVersion": {
+      "type": "string",
+      "description": "The current version of the node software components."
+    },
+    "createTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The time the cluster was created."
+    },
+    "selfLink": {
+      "type": "string",
+      "description": "Server-defined URL for the resource."
+    }
+  },
+  "required": ["name"]
+}
