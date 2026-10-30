@@ -1,4 +1,4 @@
-# Google Kubernetes Engine (google-kubernetes-engine)
+# Google Kubernetes Engine
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,64 +66,140 @@
 
 Google Kubernetes Engine (GKE) is a managed Kubernetes service on Google Cloud that provides a production-ready environment for deploying, managing, and scaling containerized applications. It offers autopilot and standard modes, built-in security, multi-cluster management, and seamless integration with Google Cloud services.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/google-kubernetes-engine/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/google-kubernetes-engine/refs/heads/main/apis.yml)
+**Areas:** Cloud-Native · Containers · Google Cloud · Kubernetes · Managed Service · Container Orchestration
 
-## Scope
+## Google Kubernetes Engine on APIs.io
 
-- **Type:** Index
+Everything profiled for Google Kubernetes Engine is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/google-kubernetes-engine/](https://apis.io/providers/google-kubernetes-engine/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-- Cloud Native
-- Containers
-- Google Cloud
-- Kubernetes
-- Managed Service
-- Orchestration
+- [Google Kubernetes Engine Clusters API](https://apis.io/apis/google-kubernetes-engine/google-kubernetes-engine-clusters-api/) — The Clusters API from Google Kubernetes Engine — 1 operation(s) for clusters.
+- [Google Kubernetes Engine Google Kubernetes Engine API](https://apis.io/apis/google-kubernetes-engine/google-kubernetes-engine-google-kubernetes-engine-api-api/) — The Google Kubernetes Engine API API from Google Kubernetes Engine — 15 operation(s) for google kubernetes engine api.
+- [Google Kubernetes Engine Operations API](https://apis.io/apis/google-kubernetes-engine/google-kubernetes-engine-operations-api/) — The Operations API from Google Kubernetes Engine — 1 operation(s) for operations.
+- [Google Kubernetes Engine ServerConfig API](https://apis.io/apis/google-kubernetes-engine/google-kubernetes-engine-serverconfig-api/) — The ServerConfig API from Google Kubernetes Engine — 1 operation(s) for serverconfig.
+- [Google Kubernetes Engine Node Pools API](https://apis.io/apis/google-kubernetes-engine/google-kubernetes-engine-node-pools-api/) — The Node Pools API from Google Kubernetes Engine — 1 operation(s) for node pools.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-26
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Google Kubernetes Engine
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Google Kubernetes Engine (GKE) is a managed, production-ready environment for deploying containerized applications on Google Cloud. It provides auto-scaling, auto-upgrade, auto-repair, and built-in security features to help you run Kubernetes clusters with minimal operational overhead. GKE Autopilot further simplifies cluster management by automatically provisioning and managing the underlying infrastructure.
+- [Google Kubernetes Engine Agentic Access](https://apis.io/agentic-access/google-kubernetes-engine/google-kubernetes-engine-agentic-access/)
 
-- **Human URL:** [https://cloud.google.com/kubernetes-engine](https://cloud.google.com/kubernetes-engine)
+#### JSON Schema (1)
 
-#### Tags
+The data models the API reads and writes.
 
-- Cloud Native
-- Containers
-- Google Cloud
-- Kubernetes
-- Managed Service
-- Orchestration
+- [Google Kubernetes Engine Cluster](https://apis.io/schemas/google-kubernetes-engine/gke-cluster/)
 
-#### Properties
+#### Collections (6)
 
-- [OpenAPI](openapi/google-kubernetes-engine-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/google-kubernetes-engine.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/google-kubernetes-engine.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://cloud.google.com/kubernetes-engine/docs)
-- [Getting Started](https://cloud.google.com/kubernetes-engine/docs/quickstart)
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Google Kubernetes Engine API](https://apis.io/collections/google-kubernetes-engine/open-google-kubernetes-engine/)
+- [Google Kubernetes Engine Clusters API](https://apis.io/collections/google-kubernetes-engine/open-google-kubernetes-engine-clusters-api/)
+- [Google Kubernetes Engine Clusters Google Kubernetes Engine API API](https://apis.io/collections/google-kubernetes-engine/open-google-kubernetes-engine-google-kubernetes-engine-api-api/)
+- [Google Kubernetes Engine Clusters NodePools API](https://apis.io/collections/google-kubernetes-engine/open-google-kubernetes-engine-nodepools-api/)
+- [Google Kubernetes Engine Clusters Operations API](https://apis.io/collections/google-kubernetes-engine/open-google-kubernetes-engine-operations-api/)
+- [Google Kubernetes Engine Clusters ServerConfig API](https://apis.io/collections/google-kubernetes-engine/open-google-kubernetes-engine-serverconfig-api/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Google Kubernetes Engine Authentication](https://apis.io/security/google-kubernetes-engine/google-kubernetes-engine-authentication/)
+- [Google Kubernetes Engine Domain Security](https://apis.io/security/google-kubernetes-engine/google-kubernetes-engine-domain-security/)
+- [Google Kubernetes Engine Vulnerability Disclosure](https://apis.io/security/google-kubernetes-engine/google-kubernetes-engine-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Google Kubernetes Engine Scopes](https://apis.io/scopes/google-kubernetes-engine/google-kubernetes-engine-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Google Kubernetes Engine Plans Pricing](https://apis.io/plans/google-kubernetes-engine/google-kubernetes-engine-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Google Kubernetes Engine Rate Limits](https://apis.io/rate-limits/google-kubernetes-engine/google-kubernetes-engine-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Google Kubernetes Engine Finops](https://apis.io/finops/google-kubernetes-engine/google-kubernetes-engine-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://cloud.google.com/kubernetes-engine)
 - [Documentation](https://cloud.google.com/kubernetes-engine/docs)
 - [Pricing](https://cloud.google.com/kubernetes-engine/pricing)
-- [Blog](https://cloud.google.com/blog/products/containers-kubernetes)
-- [Sign Up](https://console.cloud.google.com/)
-- [GitHub Organization](https://github.com/GoogleCloudPlatform)
-- [Status Page](https://status.cloud.google.com/)
 - [Support](https://cloud.google.com/support)
-- [Integrations](https://cloud.google.com/marketplace)
+- [Blog](https://cloud.google.com/blog/products/containers-kubernetes)
+- [GitHub](https://github.com/GoogleCloudPlatform)
+- [Status](https://status.cloud.google.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 36.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 46.5 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 31.6 |
+
+**Agent readiness 24.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 27.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/google-kubernetes-engine/](https://apis.io/providers/google-kubernetes-engine/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Google Kubernetes Engine: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/google-kubernetes-engine/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
